@@ -4,78 +4,136 @@
 <head>
     <meta charset="utf-8" />
     <title>个人简历</title>
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        
+        img {
+            height: 10%;
+            width: 10%;
+            float: right;
+            border: 1px solid black;
+            padding: 5px;
+            margin-right: 5px;
+            background-color: white;
+            box-shadow: 2px 3px 5px black;
+        }
+        
+        h2 {
+            background: blue;
+            border-top: 1px dashed white;
+            border-bottom: 1px dashed white;
+            font-family: 'Courier New', Courier, monospace;
+            height: 38px;
+            vertical-align：middle;
+            color: gray;
+        }
+        
+        .list li {
+            list-style: none;
+        }
+        
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 4px black;
+        }
+        
+        table {
+            border: 1px solid black;
+            width: 780px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>个人简历</h1>
-    <img src="images/01.gif" />
-    <div>
-        <ul>
-            <li>姓名：小星星</li>
-            <li>年龄：永远二十岁</li>
-            <li>毕业院校：中国皇家地质学院</li>
-            <li>学历：本科</li>
-            <li>专业：找矿的</li>
-            <li>性别：男</li>
-            <li>籍贯：太阳系地球</li>
-            <li>民族：少数滴</li>
-            <li>联系电话：13928289520</li>
-            <li>邮箱：13928289520@qq.com</li>
-        </ul>
+    <div class="container">
+        <h1>个人简历</h1>
+        <img src="images/01.gif" />
+        <div>
+            <ul class="list">
+                <li><span>姓名</span>：<span>小星星</span></li>
+                <li>年龄：永远二十岁</li>
+                <li>毕业院校：中国皇家地质学院</li>
+                <li>学历：本科</li>
+                <li>专业：找矿的</li>
+                <li>性别：男</li>
+                <li>籍贯：太阳系地球</li>
+                <li>民族：少数滴</li>
+                <li>联系电话：
+                    <tel>13928289520</tel>
+                </li>
+                <li>邮箱：
+                    <email>13928289520@qq.com</email>
+                </li>
+            </ul>
+        </div>
+        <h2>教育经历</h2>
+        <div>
+            <p>2012-2016 中国皇家地质学院 资源学院</p>
+            <p>主修课程：《地质学》、《地球物理》、《地球化学》、《岩石学》、《矿床学》、《古生物及地质学》、<br /> 《C语言》、《测量学》等
+            </p>
+            <p>专业使用软件：MapGis、DGSS、CAD、Photoshop</p>
+        </div>
+        <h2>实习经历</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>实习时间</th>
+                    <th>实习地点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><time>2013.8.17-2013.9.1</time></td>
+                    <td>大名庄园野外实习</td>
+                </tr>
+                <tr>
+                    <td><time>2013.8.17-2013.9.1</time></td>
+                    <td>大名庄园野外实习</td>
+                </tr>
+                <tr>
+                    <td><time>2013.8.17-2013.9.1</time></td>
+                    <td>大名庄园野外实习</td>
+                </tr>
+                <tr>
+                    <td><time>2013.8.17-2013.9.1</time></td>
+                    <td>大名庄园野外实习</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>其他经历</h2>
+        <div>
+            <ol>
+                <li>在校期间参加学生会，并成功做到学生会主席；</li>
+                <li>参加了以关爱老人为主题的志愿者活动；</li>
+                <li>假期时和朋友批发各种玩具然后零售；</li>
+                <li>做过多份兼职，收获颇多；</li>
+                <li>取得C1驾照；</li>
+                <li>参加学校的三下乡活动，体验了一把当老师的感觉；</li>
+                <li>参加过学校举办的幼儿园LOL争霸赛；</li>
+            </ol>
+        </div>
+        <h2>自我评价</h2>
+        <div>
+            <p>
+                我为人友善，真诚，工作严谨踏实，认真负责。拥有积极向上的生活态度和广泛的兴趣爱好,具有良好 的心理素质和吃苦耐劳精神，对事有自己的见解。我有着年轻人特有的朝气和魄力,富有开创事业的头脑和 激情,有较好的文字功底,口头表达能力以及交际能力，有着较强的学习和接受新鲜事物的能力。
+            </p>
+        </div>
+        <h2>兴趣爱好</h2>
+        <div>
+            <p>打篮球，运动，旅游，健身，电脑，阅读，音乐等</p>
+        </div>
     </div>
-    <h2>教育经历</h2>
-    <div>
-        <p>2012-2016 中国皇家地质学院 资源学院</p>
-        <p>主修课程：《地质学》、《地球物理》、《地球化学》、《岩石学》、《矿床学》、《古生物及地质学》、 《C语言》、《测量学》等
-        </p>
-        <p>专业使用软件：MapGis、DGSS、CAD、Photoshop</p>
-    </div>
-    <h2>实习经历</h2>
-    <table>
-        <th>
-            <td>实习时间</td>
-            <td>实习地点</td>
-        </th>
-        <tr>
-            <td>2013.8.17-2013.9.1</td>
-            <td>大名庄园野外实习</td>
-        </tr>
-        <tr>
-            <td>2013.8.17-2013.9.1</td>
-            <td>大名庄园野外实习</td>
-        </tr>
-        <tr>
-            <td>2013.8.17-2013.9.1</td>
-            <td>大名庄园野外实习</td>
-        </tr>
-        <tr>
-            <td>2013.8.17-2013.9.1</td>
-            <td>大名庄园野外实习</td>
-        </tr>
-    </table>
-    <h2>其他经历</h2>
-    <div>
-        <ol>
-            <li>在校期间参加学生会，并成功做到学生会主席；</li>
-            <li>参加了以关爱老人为主题的志愿者活动；</li>
-            <li>假期时和朋友批发各种玩具然后零售；</li>
-            <li>做过多份兼职，收获颇多；</li>
-            <li>取得C1驾照；</li>
-            <li>参加学校的三下乡活动，体验了一把当老师的感觉；</li>
-            <li>参加过学校举办的幼儿园LOL争霸赛；</li>
-        </ol>
-    </div>
-    <h2>自我评价</h2>
-    <div>
-        <p>
-            我为人友善，真诚，工作严谨踏实，认真负责。拥有积极向上的生活态度和广泛的兴趣爱好,具有良好 的心理素质和吃苦耐劳精神，对事有自己的见解。我有着年轻人特有的朝气和魄力,富有开创事业的头脑和 激情,有较好的文字功底,口头表达能力以及交际能力，有着较强的学习和接受新鲜事物的能力。
-        </p>
-    </div>
-    <h2>兴趣爱好</h2>
-    <div>
-        <p>打篮球，运动，旅游，健身，电脑，阅读，音乐等</p>
-    </div>
-
 </body>
 
 </html>
